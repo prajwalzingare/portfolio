@@ -1,0 +1,595 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* all similar content styling codes */
+section {
+    padding: 60px 0;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.about,
+.projects,
+.skills,
+.contact,
+footer {
+    font-family: "Poppins", sans-serif;
+}
+
+.about .about-content,
+.projects .project-content,
+.skills .skills-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+
+/* navbar styling */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.4s ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: rgb(13, 14, 13);
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: rgb(245, 245, 245);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a {
+    color: #fff;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: crimson;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: crimson;
+}
+
+/* menu btn styling */
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #888;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    filter: brightness(60%);
+}
+
+/* home section styling */
+.home {
+    display: flex;
+    background: black no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.home .max-width {
+    width: 100%;
+    display: flex;
+}
+
+
+
+.home .home-content .text-1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: rgb(167, 218, 30);
+}
+
+.home .home-content .text-2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: aqua;
+    font-weight: 500;
+}
+
+/* about section styling */
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.about .about-content .right {
+    width: 45%;
+}
+
+
+
+.about .about-content .right p {
+    line-height: 1.5rem;
+    padding-right: 2rem;
+    max-width: 22rem;
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: #1f1823;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #bb7443;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: rgb(17, 17, 17);
+    background: none;
+}
+
+/* services section styling */
+.projects {
+    color: #fff;
+    background: #111;
+}
+
+.projects .title::before,
+.teams .title::before {
+    background: #fff;
+}
+
+.projects .max-width {
+    text-align: center;
+}
+
+.project-content {
+    margin: 5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 10px;
+    /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  gap: 2rem; */
+}
+
+.project {
+    margin-top: 5rem;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    box-shadow: rgba(249, 244, 244, 0.881) 0px 2px 8px;
+    border-radius: 20px 20px 10px 10px;
+    width: 28rem;
+    height: 23rem;
+}
+
+.project-img img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.project-title {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #d9d9d9;
+}
+
+.project-links {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-live-link,
+.project-github-link {
+    color: #000;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.8rem;
+}
+
+
+.project-live-link:hover {
+    box-shadow: rgba(63, 39, 70, 0.644) 2px 2px 2px;
+    background-color: #64696e;
+    color: #fff;
+    font-weight: 400;
+}
+
+.project-github-link:hover {
+    box-shadow: rgba(63, 39, 70, 0.644) 2px 2px 2px;
+    background-color: #64696e;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* media querie for project section  */
+@media only screen and (max-width:750) {
+    .project-content {
+        margin: 5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px;
+        /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    gap: 2rem; */
+    }
+
+}
+
+/* footer section styling */
+footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.social-icons a {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141d2e;
+    margin: 20px 10px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons i {
+    color: white;
+}
+
+.social-icons a:hover {
+    background-color: #4fd565e3;
+}
+
+footer p {
+    font-size: small;
+    color: aqua;
+    font-weight: lighter;
+}
+
+
+
+/* responsive media query start */
+
+
+@media (max-width: 1104px) {
+    .about .about-content .left img {
+        height: 340px;
+        width: 350px;
+    }
+
+    .projects {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        padding: 2rem 10rem;
+
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    .max-width {
+        max-width: 930px;
+    }
+
+    .about .about-content .column {
+        width: 100%;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right {
+        flex: 100%;
+    }
+
+
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+
+    .project {
+        height: 16rem;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+
+    .home .home-content a {
+        font-size: 20px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+
+    footer {
+        margin-bottom: 102px;
+    }
+
+    .right form .error-box {
+        width: 150px;
+    }
+
+    .project-content {
+        margin: 5rem -5rem;
+        width: 250px;
+    }
+
+    .project {
+        height: 20rem;
+    }
+
+    .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width:350px) {
+
+    .project-content {
+        margin: 5rem -9rem;
+        width: 250px;
+    }
+
+    .project {
+        height: 18rem;
+    }
+
+    footer {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    .projects .title {
+        position: relative;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-right: -88px;
+        right: 60px;
+        padding-bottom: 20px;
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    .project-content {
+        margin: 5rem -7rem;
+        width: 250px;
+    }
+
+    .project {
+        height: 18rem;
+    }
+
+    footer {
+        /* margin-bottom: 0px; */
+        margin-top: -13px;
+    }
+}
