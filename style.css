@@ -527,7 +527,7 @@ footer p {
     }
 
     footer {
-        margin-bottom: 102px;
+        /* margin-bottom: 102px; */
     }
 
     .right form .error-box {
@@ -586,12 +586,13 @@ footer p {
         margin-bottom: 20px;
         margin-right: -88px;
         right: 60px;
+        top: 20px;
         padding-bottom: 20px;
         font-family: "Ubuntu", sans-serif;
     }
 
     .project-content {
-        margin: 5rem -9rem;
+        margin: -3rem -9rem;
         width: 330px;
     }
 
@@ -600,7 +601,8 @@ footer p {
     }
 
     footer {
-        /* margin-bottom: 0px; */
-        margin-top: -13px;
+        height: 100%;
+        margin-bottom: 0px;
+        margin-top: -15px;
     }
 }
