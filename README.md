@@ -2,13 +2,13 @@
 
 By prajwal zingare
 
-![hitesh choudhary](https://img.shields.io/badge/Prajwal--Zingare-JS--Developer-green)
+![prajwal zingare](https://img.shields.io/badge/Prajwal--Zingare-JS--Developer-green)
 
-![ineuro, lco](https://img.shields.io/badge/iNeuron-LCO-green)
-![hitesh choudhary](https://img.shields.io/badge/Hitesh--Choudhary-JS--bootcamp-red)
+
+
 
 ![HTML & CSS](https://img.shields.io/badge/HTML-CSS-orange)
-![HTML & CSS-Assighnment](https://img.shields.io/badge/HTML--CSS--JS-Assighnment-orange)
+![HTML & CSS-Assighnment](https://img.shields.io/badge/HTML--CSS--JS-orange)
 
 
 ![HTML & CSS-Assighnment-project](https://img.shields.io/badge/HTML--CSS-Portfolio-orange)
